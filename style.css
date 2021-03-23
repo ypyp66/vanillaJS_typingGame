@@ -1,0 +1,73 @@
+:root {
+  /*color*/
+  --color-header: #3b5999;
+
+  /*size*/
+  --size-space: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: var(--color-header);
+  padding: var(--size-space);
+}
+
+main {
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  margin: calc(var(--size-space) * 4);
+  font-size: calc(var(--size-space) * 4);
+  font-weight: bold;
+}
+.typing {
+  width: 30%;
+  padding: calc(var(--size-space) * 0.3);
+}
+.typing:focus {
+  outline: none;
+}
+.score,
+.time {
+  font-size: calc(var(--size-space) * 2);
+}
+.info {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+  margin: var(--size-space) auto;
+}
+
+.btn {
+  width: 30%;
+  padding: calc(var(--size-space) * 0.3);
+  outline: none;
+  background-color: var(--color-header);
+  border: none;
+  color: white;
+}
+
+.loading {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.wrong {
+  border: 1.8px solid red;
+}
